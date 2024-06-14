@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Easy Leetcode",
+    "version": "1.0",
+    "description": "Removes the difficulty labels from the problems",
+  
+    "icons": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "*://leetcode.com/problemset/",
+          "*://leetcode.com/tag/*",
+          "*://leetcode.com/problems/*"
+
+
+        ]
+      }
+      
+    ]
+  }
