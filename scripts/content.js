@@ -2,7 +2,7 @@ function hideDifficulty() {
   const spans = document.querySelectorAll('span');
 
   spans.forEach(span => {
-    if (span.textContent.includes('Easy') || span.textContent.includes('Medium') || span.textContent.includes('Hard')) {
+    if (span.textContent==='Easy' || span.textContent==='Medium' || span.textContent==='Hard') {
       span.style.display = 'none';
     }
   });

@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Easy Leetcode",
-    "version": "1.0",
+    "version": "1.01",
     "description": "Removes the difficulty labels from the problems",
   
     "icons": {
