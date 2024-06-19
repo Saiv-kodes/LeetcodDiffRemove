@@ -1,20 +1,30 @@
 {
     "manifest_version": 3,
     "name": "Easy Leetcode",
-    "version": "1.01",
+    "version": "1.02",
     "description": "Removes the difficulty labels from the problems",
-  
+  "permissions": [
+    "storage" 
+  ],
     "icons": {
       "16": "icon.png",
       "32": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
     },
+    "background":{
+      "service_worker":"scripts/background.js"
+    },
+    "action":{
+      "default_popup":"popup.html"
+    },
+
     "content_scripts": [
       {
         "js": ["scripts/content.js"],
         "matches": [
-          "*://leetcode.com/problemset/",
+          "*://leetcode.com/problemset/*",
+          "*://leetcode.com/problemset/?page=*",
           "*://leetcode.com/tag/*",
           "*://leetcode.com/problems/*"
 
